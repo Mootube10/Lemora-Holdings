@@ -1,54 +1,69 @@
-          <article class="person">
-            <div class="portrait" aria-hidden="true">
-              <svg viewBox="0 0 100 100" fill="none">
-                <circle cx="50" cy="34" r="18" fill="rgba(255,255,255,.9)"/>
-                <path d="M18 88C22 63 36 54 50 54C64 54 78 63 82 88H18Z" fill="rgba(255,255,255,.9)"/>
-              </svg>
+
+    <section class="content-band section" id="companies" aria-labelledby="companies-title">
+      <div class="wrap">
+        <div class="company-header">
+          <div>
+            <p class="section-label">Portfolio</p>
+            <h2 id="companies-title">Companies</h2>
+          </div>
+          <p class="lead">The portfolio is built around useful, resilient businesses with room to improve and grow responsibly.</p>
+        </div>
+        <div class="company-list">
+          <article class="company">
+            <div class="company-top">
+              <div class="company-mark">LT</div>
+              <span class="tag">Technology</span>
             </div>
-            <div class="person-copy">
-              <h3>Daniel Mercer</h3>
-              <p class="role">Finance Director</p>
-              <p>Oversees investment planning, reporting, and controls.</p>
-            </div>
-          </article>
-          <article class="person">
-            <div class="portrait" aria-hidden="true">
-              <svg viewBox="0 0 100 100" fill="none">
-                <circle cx="50" cy="34" r="18" fill="rgba(255,255,255,.9)"/>
-                <path d="M18 88C22 63 36 54 50 54C64 54 78 63 82 88H18Z" fill="rgba(255,255,255,.9)"/>
-              </svg>
-            </div>
-            <div class="person-copy">
-              <h3>Sofia Bennett</h3>
-              <p class="role">Operations Lead</p>
-              <p>Works with company teams to improve delivery and systems.</p>
+            <div>
+              <h3>Lumora Technologies</h3>
+              <p>Software and digital infrastructure for service-led businesses.</p>
             </div>
           </article>
-          <article class="person">
-            <div class="portrait" aria-hidden="true">
-              <svg viewBox="0 0 100 100" fill="none">
-                <circle cx="50" cy="34" r="18" fill="rgba(255,255,255,.9)"/>
-                <path d="M18 88C22 63 36 54 50 54C64 54 78 63 82 88H18Z" fill="rgba(255,255,255,.9)"/>
-              </svg>
+          <article class="company">
+            <div class="company-top">
+              <div class="company-mark">LP</div>
+              <span class="tag">Property</span>
             </div>
-            <div class="person-copy">
-              <h3>Marcus Reed</h3>
-              <p class="role">Commercial Advisor</p>
-              <p>Supports sales strategy and market development.</p>
+            <div>
+              <h3>Lumora Property Group</h3>
+              <p>Commercial property management, development support, and improvement projects.</p>
+            </div>
+          </article>
+          <article class="company">
+            <div class="company-top">
+              <div class="company-mark">LE</div>
+              <span class="tag">Energy</span>
+            </div>
+            <div>
+              <h3>Lumora Energy Services</h3>
+              <p>Operational support for efficient, lower-waste energy use.</p>
+            </div>
+          </article>
+          <article class="company">
+            <div class="company-top">
+              <div class="company-mark">LC</div>
+              <span class="tag">Advisory</span>
+            </div>
+            <div>
+              <h3>Lumora Consulting</h3>
+              <p>Practical advisory services across finance, process, and growth.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="content-band alt section" id="contact" aria-labelledby="contact-title">
+    <section class="content-band dark section" id="contact" aria-labelledby="contact-title">
       <div class="wrap">
-        <div class="section-heading">
-          <h2 id="contact-title">Contact us</h2>
-          <p>For partnership enquiries, portfolio questions, or general messages, contact the Lumora Holidings office.</p>
+        <div class="contact-header">
+          <div>
+            <p class="section-label">Get in touch</p>
+            <h2 id="contact-title">Contact us</h2>
+          </div>
+          <p class="lead">For partnership enquiries, portfolio questions, or general messages, contact the Lumora Holidings office.</p>
         </div>
-        <div class="contact-layout">
-          <aside class="contact-panel" aria-label="Contact details">
+        <div class="contact-shell">
+          <aside class="contact-details" aria-label="Contact details">
             <div class="contact-item">
               <strong>Email</strong>
               <a href="mailto:hello@lumoraholidings.com">hello@lumoraholidings.com</a>
@@ -66,64 +81,32 @@
               <span>Monday to Friday, 9:00am to 5:30pm</span>
             </div>
           </aside>
-          <form class="form">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Your name">
-
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@example.com">
-
-            <label for="topic">Topic</label>
-            <select id="topic" name="topic">
-              <option>Partnership enquiry</option>
-              <option>Portfolio company</option>
-              <option>General question</option>
-            </select>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="How can we help?"></textarea>
-
+          <form class="contact-form">
+            <div class="form-grid">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name">
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com">
+              </div>
+              <div class="full">
+                <label for="topic">Topic</label>
+                <select id="topic" name="topic">
+                  <option>Partnership enquiry</option>
+                  <option>Portfolio company</option>
+                  <option>General question</option>
+                </select>
+              </div>
+              <div class="full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="How can we help?"></textarea>
+              </div>
+            </div>
             <button class="button submit" type="submit">Send Message</button>
+            <p class="form-note">This demo form is ready for a real email or backend connection later.</p>
           </form>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-band section" id="companies" aria-labelledby="companies-title">
-      <div class="wrap">
-        <div class="section-heading">
-          <h2 id="companies-title">Companies</h2>
-          <p>Our portfolio is designed around steady, useful businesses with room to grow responsibly.</p>
-        </div>
-        <div class="company-list">
-          <article class="company">
-            <div class="company-mark">LT</div>
-            <div>
-              <h3>Lumora Technologies</h3>
-              <p>Software and digital infrastructure for modern service businesses.</p>
-            </div>
-          </article>
-          <article class="company">
-            <div class="company-mark">LP</div>
-            <div>
-              <h3>Lumora Property Group</h3>
-              <p>Commercial property management and improvement projects.</p>
-            </div>
-          </article>
-          <article class="company">
-            <div class="company-mark">LE</div>
-            <div>
-              <h3>Lumora Energy Services</h3>
-              <p>Operational support for efficient, lower-waste energy use.</p>
-            </div>
-          </article>
-          <article class="company">
-            <div class="company-mark">LC</div>
-            <div>
-              <h3>Lumora Consulting</h3>
-              <p>Practical advisory services for finance, process, and growth.</p>
-            </div>
-          </article>
         </div>
       </div>
     </section>
@@ -132,8 +115,31 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <span>&copy; 2026 Lumora Holidings. All rights reserved.</span>
-      <span>Investment holdings and business support.</span>
+      <span>Private holdings and operating support.</span>
     </div>
   </footer>
+
+  <script>
+    const links = document.querySelectorAll(".nav-links a");
+    const sections = [...links].map((link) => document.querySelector(link.getAttribute("href")));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        links.forEach((link) => {
+          link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`);
+        });
+      });
+    }, { rootMargin: "-40% 0px -50% 0px", threshold: 0 });
+
+    sections.forEach((section) => {
+      if (section) observer.observe(section);
+    });
+
+    document.querySelector(".contact-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      event.currentTarget.querySelector(".form-note").textContent = "Thanks. Your message has been prepared for the Lumora Holidings team.";
+    });
+  </script>
 </body>
 </html>
